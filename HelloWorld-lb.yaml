@@ -21,13 +21,13 @@ spec:
         - containerPort: 80
       imagePullSecrets:
     # enter the name of the secret you created  
-      - name: <secret-name>
+      - name: ocirdemodicd
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloworld-service-<userid>
-  namespace: ns-<userid>
+  name: helloworld-service-demo-cicd
+  namespace: democicd
   annotations:
     oci.oraclecloud.com/load-balancer-type: "lb"
     service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
