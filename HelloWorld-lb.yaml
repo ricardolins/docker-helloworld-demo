@@ -16,7 +16,7 @@ spec:
       containers:
       - name: helloworld
     # enter the path to your image, be sure to include the correct region prefix    
-        image: 	gru.ocir.io/grxmw2a9myyj/devops-demo-cicd/oci_sample_webapp:${BUILDRUN_HASH}
+        image: gru.ocir.io/grxmw2a9myyj/devops-demo-cicd/oci_sample_webapp:${BUILDRUN_HASH}
         ports:
         - containerPort: 80
       imagePullSecrets:
