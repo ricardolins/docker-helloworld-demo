@@ -21,7 +21,7 @@ spec:
         - containerPort: 80
       imagePullSecrets:
     # enter the name of the secret you created  
-      - name: ocirdemodicd
+      - name: ocirdemocicd
 ---
 apiVersion: v1
 kind: Service
